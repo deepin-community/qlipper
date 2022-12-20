@@ -1,0 +1,103 @@
+qlipper (1:5.1.2-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:48:30 +0800
+
+qlipper (1:5.1.2-1) unstable; urgency=medium
+
+  * Cherry-picked upstream release 5.1.2.
+  * Bumped Standards to 4.3.0, no changes needed
+  * Bumped years in copyright
+  * use debhelper-compat (= 12) instead of debhelper
+  * Enabled network-sharing
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 01 Mar 2019 00:53:42 +0100
+
+qlipper (1:5.1.1-3) unstable; urgency=medium
+
+  * Bumped compat to 11
+  * Bumped debhelper to >= 11~
+  * Bumped Standards to 4.1.4, no changes needed
+  * Changed VCS fields for salsa
+  * Bumped years in copyright
+  * Removed not used gbp.conf
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 28 Apr 2018 18:51:42 +0200
+
+qlipper (1:5.1.1-2) unstable; urgency=medium
+
+  * Added missed breaks and replaces for lxqt-common (<< 0.12.0)
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 08 Dec 2017 18:39:03 +0100
+
+qlipper (1:5.1.1-1) unstable; urgency=medium
+
+  * Cherry-picked upstream release 5.1.1.
+  * New build dependency lxqt-build-tools (>= 0.4.0)
+  * Bumped Standards to 4.1.2 - no changes needed
+  * Removed branch from VCS-fields
+  * Bumped Copyright years
+  * Enable LXQt autostart in d/rules
+  * Added lxqt-autostart to copyright
+  * Added LGPL-2.1+ to copyright
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 08 Dec 2017 17:43:39 +0100
+
+qlipper (1:5.0.0-1) unstable; urgency=medium
+
+  * Cherry-picked upstream release 5.0.0.
+  * Added watch file
+  * Fixed years in copyright
+  * Set epoch to get rid of the old version scheme which was strange right
+    from the beginning - we probably should have started with the last tag,
+    aka 2.0.2, not with the version in CMakeLists.txt
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 02 Nov 2016 20:31:58 +0100
+
+qlipper (5.0.0-1~40-g48754f2-1) unstable; urgency=medium
+
+  * Cherry-picking upstream version 5.0.0-1~40-g48754f2.
+  * Bumped compat to 10
+  * Bumped minimum version debhelper (>= 10)
+  * Fixed typo in changelog
+  * Removed --parallel from rules, standard compat 10
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 28 Sep 2016 00:34:29 +0200
+
+qlipper (5.0.0-1~31-gdae06f3-1) unstable; urgency=medium
+
+  * Cherry-picking upstream version 5.0.0-1~31-gdae06f3.
+  * The real output of git describe is 2.0.2-31-gdae06f3 - but the
+    5.0.0 version in CMake was introduced in May 2015. So i finally
+    decided to use a version lower than 5.0.0-1. Maybe upstream
+    really release 5.0.0 somewhen.
+  * Bumped Standards to 3.9.8, no changes needed
+  * Fixed VCS fields, using https and plain /git/
+  * Fixed copyright Format field, using https
+  * Bumped years in copyrights
+  * Exported LC_ALL=C.UTF-8, make builds reproducible
+  * Added hardening options
+  * Set CMAKE_BUILD_TYPE=RelWithDebInfo
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 21 Jul 2016 22:32:38 +0200
+
+qlipper (5.0.0+20151111-1) unstable; urgency=medium
+
+  * Cherry-picking upstream version 5.0.0+20151111.
+  * Removed dbg package in favor of dbgsym.
+  * Removed debian/patches, applied upstream
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 27 Dec 2015 02:32:18 +0100
+
+qlipper (5.0.0+20150823-2) unstable; urgency=medium
+
+  * Fix build  with Qt 5, proposed upstream patch (Closes: #803072).
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 26 Oct 2015 19:30:22 +0100
+
+qlipper (5.0.0+20150823-1) unstable; urgency=low
+
+  * Initial release (Closes: #795792).
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sat, 12 Sep 2015 00:58:22 +0800
