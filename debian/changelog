@@ -1,8 +1,56 @@
-qlipper (1:5.1.2-deepin1) unstable; urgency=medium
+qlipper (1:5.1.2-3) unstable; urgency=medium
 
-  * Rebuild
+  * Clean up of group membership after 2nd calls.
+  * debian/control: build-deps on lxqt-build-tools-qt5. (Closes: #1090287)
+  * debian/control: bump to Standards-version to 4.7.0, no changes needed.
+  * debian/copyright: update.
+  * debian/source/local-options: drop unused file.
 
- -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:48:30 +0800
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sat, 15 Feb 2025 14:28:12 +0100
+
+qlipper (1:5.1.2-2) unstable; urgency=medium
+
+  [ Alf Gaida ]
+  * Switched to gbp
+  * Bumped Standards-Version to 4.4.0, no changes needed
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Update standards version to 4.5.0, no changes needed.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.1, no changes needed.
+  * Avoid explicitly specifying -Wl,--as-needed linker flag.
+  * Remove constraints unnecessary since buster (oldstable):
+    + Build-Depends: Drop versioned constraint on lxqt-build-tools.
+
+  [ Alf Gaida ]
+  * Switched to gbp
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Andrew Lee (李健秋) ]
+  * Add debian/salsa-ci.yml file.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.1, no changes needed.
+  * Avoid explicitly specifying -Wl,--as-needed linker flag.
+  * Remove constraints unnecessary since buster (oldstable)
+
+  [ Andrew Lee (李健秋) ]
+  * debian/control: update team address.
+  * debian/control: bump to Standards-version to 4.6.2, no changes needed.
+  * debian/control: drop breaks and replaces on obsoleted version.
+  * debian/copyright: update.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Wed, 06 Sep 2023 15:56:13 +0200
 
 qlipper (1:5.1.2-1) unstable; urgency=medium
 
